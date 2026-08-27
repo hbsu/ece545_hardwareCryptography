@@ -1,0 +1,63 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{verbatim}
+
+\title{Assignment 1}
+\author{Henry Su \\ Unity ID: hbsu@ncsu.edu \\ Student ID: 200448882}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Question 1: Initial AddRoundKey}
+\begin{verbatim}
+round[ 1].start    00102030405060708090a0b0c0d0e0f0
+\end{verbatim}
+
+\section*{Question 2: SubBytes}
+\begin{verbatim}
+round[ 1].s_box    63cab7040953d051cd60e0e7ba70e18c
+\end{verbatim}
+
+\section*{Question 3: State Matrix}
+\begin{verbatim}
+round[ 1] state matrix (Q3):
+  63 09 cd ba
+  ca 53 60 70
+  b7 d0 e0 e1
+  04 51 e7 8c
+\end{verbatim}
+
+\section*{Question 4: ShiftRows}
+\begin{verbatim}
+round[ 1].s_row    6353e08c0960e104cd70b751bacad0e7
+\end{verbatim}
+
+\section*{Question 5: MixColumns}
+\begin{verbatim}
+round[ 1].m_col    5f72641557f5bc92f7be3b291db9f91a
+\end{verbatim}
+
+\section*{Question 6: AddRoundKey (Round 1)}
+\begin{verbatim}
+round[ 2].start    89d810e8855ace682d1843d8cb128fe4
+\end{verbatim}
+
+\section*{Question 7: Rounds 2--9}
+\begin{verbatim}
+round[10].start    bd6e7c3df2b5779e0b61216e8b10b689
+\end{verbatim}
+
+\section*{Question 8: Final Round}
+\begin{verbatim}
+output (ciphertext) 69c4e0d86a7b0430d8cdb78070b4c55a
+\end{verbatim}
+
+\section*{Bonus: Decryption}
+\begin{verbatim}
+bonus ioutput (plaintext) 00112233445566778899aabbccddeeff
+\end{verbatim}
+
+\end{document}
