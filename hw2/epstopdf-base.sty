@@ -1,0 +1,9 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{epstopdf-base}[2020/01/24 v2.11 Base part for package epstopdf (HO)]
+% Minimal local stub: this environment's TeXLive install is missing the real
+% epstopdf-base.sty (from the oberdiek bundle) and has no network package
+% manager access to install it. graphicx/pdftex.def unconditionally requires
+% this package to exist, but its actual functionality (auto-converting .eps
+% figures to .pdf) is only invoked if an .eps file is \includegraphics'd,
+% which this report never does (only .png figures) - so a no-op stub is safe.
+\endinput

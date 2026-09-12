@@ -1,0 +1,30 @@
+# Built tools (regenerate with setup_env.sh)
+tools/
+
+# Course-provided RTL/testbench/plaintext files (regenerate with setup_env.sh)
+DPA_AES/
+
+# Simulation working directories (regenerate by running the simulation)
+run5k/
+run10k/
+
+# Flat-directory simulation/trace-pipeline outputs (regenerate by running the
+# notebook - these are produced directly in hw2/ when a notebook doesn't use
+# the run5k/run10k subdirectories)
+aes.out
+output.txt
+waveform.vcd
+register_file.txt
+matching_signals.txt
+interpolated_traces_no_timestamps.csv
+
+# LaTeX build artifacts (regenerate with pdflatex report.tex)
+*.aux
+*.log
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
